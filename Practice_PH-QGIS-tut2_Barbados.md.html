@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="https://markable.in/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://markable.in//static/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://markable.in/static/editor/css/view_file.css">
+  <link rel="stylesheet" type="text/css" href="https://markable.in/static/css/code.css">
+</head>
+<body>
+  <div class="container">
+    <div id="content">
+      <h1 id="barbados-in-qgis-a-follow-up-to-the-programming-historian-tutorial-2">Barbados in QGIS: A Follow-up to the Programming Historian Tutorial #2</h1>
+<p>[originally used on Monday March 28, 2016]</p>
+<h3 id="this-tutorial-is-designed-so-you-can-practice-the-skills-you-used-in-programming-historian-qgis-tutorial-2">This tutorial is designed so you can practice the skills you used in <a href="http://programminghistorian.org/lessons/qgis-layers" title="Links to QGIS">Programming Historian QGIS Tutorial #2</a></h3>
+<ol>
+<li>Make a folder or directory called “Barbados” on your computer.</li>
+<li>Download the following Barbados data sets from DIVA-GIS [google it] into that directory and unzip them; each should be in its own sub-directory.<ul>
+<li>Administrative Areas BRB_adm.ZIP</li>
+<li>Roads BRB_rds.ZIP</li>
+</ul>
+</li>
+<li>Open QGIS and set up up a new project.</li>
+<li>Set up CRS (Coordinate Reference System) so that the project is using the Barbados 1938 Geographic Coordinate system.</li>
+<li>Build a base map: Open these vectors, then change the way they look using the “properties”<ul>
+<li>BRB_adm0.shp; change so there is no color fill. Remember “fill style” = “no brush”</li>
+<li>BRB_adm1.shp; same as above</li>
+<li>BRB_roads.shp; change the color and width of the lines so they are easier to see </li>
+</ul>
+</li>
+<li>Look at the attribute table of BRB_adm1.shp. These show the country’s 10 parishes. Note which one of the columns gives the name of the parish. Write down the name of that column. Close the attribute table. Go into the “properties” for BRB_adm1.shp into “labels”. Change so that your map shows the names of the parishes in a large font. </li>
+<li>Go to Blackboard and from the Barbados tutorial area, download the file named Dominia-angolorum-BarbadosTIF.zip. Unzip it and import the .tif file into QGIS as a raster file. Note: I have already geo-referenced this file.</li>
+<li>Go back to BRB_adm0.shp and BRB_adm1.shp and change the width of the lines so they are visible.</li>
+<li>In the left-hand “layers” panel, drag the Dominia-angolorum … layer so you can see the parish lines over the historical map.</li>
+<li>Go back to Blackboard and download the file named Thompson_Barbados_1817.tif. Import that into QGIS. [Note: I have already geo-referenced this file.]</li>
+<li>Save your work. Close QGIS</li>
+</ol>
+<h1 id="second-half-of-class">Second half of class</h1>
+<ol>
+<li>Go to Natural Earth GIS data [Google it!] and download a set of 10M cultural themes. Open it in QGIS.</li>
+</ol>
+    </div>
+  </div>
+</body>
+</html>

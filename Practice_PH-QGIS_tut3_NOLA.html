@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="https://markable.in/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://markable.in//static/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://markable.in/static/editor/css/view_file.css">
+  <link rel="stylesheet" type="text/css" href="https://markable.in/static/css/code.css">
+</head>
+<body>
+  <div class="container">
+    <div id="content">
+      <h1 id="new-orleans-in-qgis-creating-new-vector-data-from-historical-maps">New Orleans in QGIS: Creating New Vector Data from Historical Maps</h1>
+<p>[originally used Monday April 4, 2016]</p>
+<h3 id="this-tutorial-is-designed-to-reinforce-the-skills-you-learned-in-programming-historian-qgis-tutorial353">This tutorial is designed to reinforce the skills you learned in <a href="http://programminghistorian.org/lessons/vector-layers-qgis" title="Links to Programming Historian">Programming Historian QGIS Tutorial#3</a></h3>
+<ol>
+<li>Download the NOLA zipfile from Blackboard and unzip it to a folder on your computer.</li>
+<li>Start a new project; set the CRS: type 26982 to bring up NAD83/ Louisiana south</li>
+<li>Add Vector: Load the NaturalEarth [ne] shapefile basemap for Louisiana: ne_Louisiana_10m_admin_1.shp; Turn the fill color off</li>
+<li>Add Vector: Load the Open Street Map [OSM] shapemap basemaps for New Orleans – go in this order and look at each. As you look for the files, notice the size of each of them. [Which file is the largest? Which is the smallest? Why?] Once they load, use the right-click “Zoom to Layer” feature and then the magnifying glass. Drag them into the stack-order that makes the most sense to you.</li>
+<li>OSM_NOLA_land_coast_polygons.shp</li>
+<li>OSM_NOLA_admin_any.shp</li>
+<li>OSM_NOLA_waterareas_any.shp</li>
+<li>OSM_NOLA_roads_any.shp</li>
+<li>OSM_NOLA_buildings_any.shp</li>
+<li>Turn labels on for the roads layer so you can see the names of the roads</li>
+<li>Turn the buildings layer off to make the map easier to view </li>
+<li>Add Raster: Load the 1854 Norman Map [this is actually a late 1800s re-creation]. Note: I have already georeferenced this file. Notice the discrepancies in the georeferencing between the historical map and the OSM basemaps. Where are they? </li>
+<li>Add Raster: Load the page from 1883 Robinson Atlas of New Orleans. Note: I have already georeferenced this file.</li>
+<li>Create a point shapefile called “points_interest’. In that file you will use points to locate buildings you think have disappeared.  [HINT: for more convenient viewing, download the Norman and Robinson maps from Blackboard and view them in a separate image viewer]</li>
+<li>Build an attribute table for these points, with these attributes<ul>
+<li>Name</li>
+<li>Year [will be the same as the map]</li>
+</ul>
+</li>
+<li>Edit the new shapefile<ul>
+<li>Add 4 points from the 1854 Norman Map</li>
+<li>Add 2 points from the 1883 Robinson Atlas page</li>
+<li>Change “properties” to display the new name and date info</li>
+</ul>
+</li>
+<li>Create a line shapefile for roads and an attribute table with these fields<ul>
+<li>Name</li>
+<li>Year</li>
+</ul>
+</li>
+<li>Trace 4 roads from the Norman map and them to compare to modern roads</li>
+<li>Create a new polygon shapefile with "building_name" and "year" attributes<ul>
+<li>Trace 2 buildings as polygons, assisted by the 'snapping' function</li>
+</ul>
+</li>
+<li>Save the whole project as a “NOLA.qgs” file so you can load it later.</li>
+<li>Zoom in on downtown New Orleans with a view that shows your new vector files but NOT the historical maps.</li>
+<li>Open Print Composer; then Layout, then Add Map to show this downtown area. Leave enough space at the top or bottom of the page for your title</li>
+<li>Go back to the main screen of QGIS, Zoom out to show the full extent of Louisiana. Turn off the buildings and roads areas [to speed up loading]</li>
+<li>Then back in Print Composer, add an insert map [Layout/Add Map] that shows the whole state.<ul>
+<li>Put frames around both Map0 and Map1</li>
+<li>Add a scalebar in Map0, with units in feet [Layout/Add Scalebar]</li>
+<li>Add a Title to the map [Layout/AddLabel] and add another smaller label identifying the sources of the data.</li>
+</ul>
+</li>
+<li>Save the printer composer file and then export a PDF[Composer/Export as PDF]. Put your last name in the PDF filename and upload it to Blackboard</li>
+</ol>
+<h1 id="data-sources-for-this-tutorial">Data sources for this tutorial:</h1>
+<ol>
+<li>Base map of Louisiana/Texas, etc. from http://NaturalEarthData.com [cultural vectors]; </li>
+<li>Base map showing many specific features of New Orleans https://data.nola.gov/</li>
+<li>Detailed base map of city and surrounding area; http://www.Mapzen.com -- features metro extracts of OpenStreetMap [OSM]</li>
+<li>Benjamin Norman, <em>Norman's Plan of New Orleans &amp; Environs</em> [New Orleans?, 1854]. https://www.loc.gov/item/2012593335/</li>
+<li>Elisha Robinson, <em>Atlas of the Citiy of New Orleans, Louisiana, based upon surveys furnished by John F. Braun</em>. New York: E. Robinson, 1883. http://www.orleanscivilclerk.com/robinson/guide.htm</li>
+</ol>
+    </div>
+  </div>
+</body>
+</html>
