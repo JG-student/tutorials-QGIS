@@ -17,8 +17,10 @@
 9.	In the left-hand “layers” panel, drag the Dominia-angolorum … layer so you can see the parish lines over the historical map.
 10.	Go back to Blackboard and download the file named Thompson\_Barbados_1817.tif. Import that into QGIS. [Note: I have already geo-referenced this file.]
 11.	Save your work. Close QGIS
+
 # Second half of class
 1.	Go to Natural Earth GIS data [Google it!] and download a set of 10M cultural themes. Open it in QGIS.
+
 # Data Sources for this Tutorial
 ## Country GIS base map data
 ## Historical maps
