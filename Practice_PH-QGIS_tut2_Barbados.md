@@ -18,11 +18,13 @@
 10.	Go back to Blackboard and download the file named Thompson\_Barbados_1817.tif. Import that into QGIS. [Note: I have already geo-referenced this file.]
 11.	Save your work. Close QGIS
 
-# Second half of class
-1.	Go to Natural Earth GIS data [Google it!] and download a set of 10M cultural themes. Open it in QGIS.
-
 # Data Sources for this Tutorial
 ## Country GIS base map data
+http://www.diva-gis.org/gdata
+
 ## Historical maps
-Adding a new line to test commit process
-adding a second line
+The map "Dominia anglorum in præcipuis insulis Americæ ut sunt insula" can be downloaded aat https://www.loc.gov/item/74690902/
+
+Other sites that are likely to have similar maps are:
+* http://DavidRumsey.com 
+* [The John Carter Brown Library Map Collection](https://www.brown.edu/academics/libraries/john-carter-brown/jcb-online/image-collections/map-collection)
