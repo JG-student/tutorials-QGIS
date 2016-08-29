@@ -1,8 +1,8 @@
 # Barbados in QGIS: Adding Vectors and Layers
 [originally used on Monday March 28, 2016]
-### This tutorial is designed so you can practice the skills you used in [Programming Historian QGIS Tutorial#2](http://programminghistorian.org/lessons/qgis-layers "Links to Programming Historian")
+### This tutorial is designed so you can practice the skills you used in the [Programming Historian QGIS Tutorial about additing layers](http://programminghistorian.org/lessons/qgis-layers "Links to Programming Historian")
 1.	Make a folder or directory called “Barbados” on your computer.
-2.	Download the following Barbados data sets from DIVA-GIS [google it] into that directory and unzip them; each should be in its own sub-directory.
+2.	Download the following Barbados data sets from DIVA-GIS [Google it] into that directory and unzip them; each should be in its own sub-directory.
     -	Administrative Areas BRB\_adm.ZIP
     -	Roads BRB\_rds.ZIP
 3. 	Open QGIS and set up up a new project.
