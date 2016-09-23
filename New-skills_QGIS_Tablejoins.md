@@ -14,7 +14,7 @@ This tutorial is inspired and adapted from Jamin Wells, “How to Map Historic C
 ### Note: Material under this heading is taken directly from the Wells tutorial, editing is noted with bracketed ellipses and comments
 
 - Open QGIS. Start a new project. [JG: set the CRS to NAD83]
-- Create a new shapefile layer. This is the basic foundation of the map. Open the zipped 1800 shapefile you downloaded from NHGIS. You should see a map of all 427 counties from the 1800 U.S. census. Use the mouse to zoom in and out. Grab and drag the map around. Play around with the buttons on the top toolbar.
+- Import the zipped 1800 shapefile you downloaded from NHGIS. This is the basic foundation of the map. Open You should see a map of all 427 counties from the 1800 U.S. census. Use the mouse to zoom in and out. Grab and drag the map around. Play around with the buttons on the top toolbar.
 - Now it’s time to upload the census data. Create a new “delimited text file” layer. This, of course, is census database.
 - [JG: Use “Add a Layer” and choose “Add delimited text layer”] Add the census CSV file you downloaded from NHGIS.
 - Be sure the “file format” is set to “CSV (comma separated values)”
